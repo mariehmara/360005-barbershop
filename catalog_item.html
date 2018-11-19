@@ -10,15 +10,15 @@
         <a class="main-header-logo">
           <img src="img/index-logo.svg" width="368" height="153" alt="Логотип барбершопа «Бородинский»">
         </a>
-        <ul class="site-navigation">
+        <ul class="site_navigation">
           <li><a href="info.html">Информация</a></li>
           <li><a href="news.html">Новости</a></li>
           <li><a href="price.html">Прайс-лист</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
+          <li class="site_navigation_current"><a href="catalog.html">Магазин</a></li>
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
-        <ul class="user-navigation">
-          <li class="login-link">Вход</li>
+        <ul class="user_navigation">
+          <li class="login_link">Вход</li>
         </ul>
       </nav>
     </header>
@@ -26,11 +26,74 @@
  <h1 class="page title">набор для путешествий «Baxter of California»</h1>
  <ul class="breadcrumbs">
    <li><a href="index.html">ГЛАВНАЯ</a></li>
-   <li><a href="catalog.html">МАГАЗИН</a></li>
-   <li><a href="catalog.html">СРЕДСТВА ДЛЯ УХОДА</a></li>
-   <li class="current_item">ГЛАВНАЯ</li>
+   <li><a href="#">МАГАЗИН</a></li>
+   <li><a href="#">СРЕДСТВА ДЛЯ УХОДА</a></li>
+   <li class="breadcrumbs_current">Набор для путешествий «Baxter of California»</li>
  </ul>
+ <section class="product_photos">
+   <h2 class="visually_hidden">Изображения товара</h2>
+      <p class="product_photo_main">
+          <img src="http://placehold.it/150x100" width="460" height="498" alt="главное изображение товара">
+      </p>
+      <ul class="product_photo_preview">
+          <li><img src="img/product-small-1.jpg" width="140" height="149" alt="Фото в анфас"></li>
+          <li><img src="img/product-small-2.jpg" width="140" height="149" alt="Фото в профиль"></li>
+          <li><img src="img/product-small-3.jpg" width="140" height="149" alt="Фото отдельной части"></li>
+    </ul>
+ </section>
+ <section class="product_info">
+    <h2 class="visually_hidden"> Описание товара</h2>
+    <p class="product_available">есть в наличии</p>
+    <p class="product_article">Артикул: dexter-ae</p>
+    <p class="product_description">Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
+    <p class="product_purchase">
+      <b>2 900 ₽</b>
+      <a href="#" class="button">КУПИТЬ</a>
+    </p>
+    <h3>В набор входят:</h3>
+    <ul>
+      <li>Средство для умывания (50 мл)
+</li>
+      <li>Увлажняющий крем (50 мл)
+</li>
+      <li>Крем для бритья (50 мл)</li>
+      <li>Крем после бритья, шампунь (50 мл)
+</li>
+      <li>Удобная кожаная косметичка</li>
+    </ul>
+ </section>
     </main>
+<footer class="main-footer">
+      <p class="footer-contacts">
+        Барбершоп «Бородинский»<br>
+        Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+        <a href="map.html">Как нас найти?</a><br>
+        Телефон: +7 (812) 666-02-66
+      </p>
+      <div class="footer-social">
+        <b>Давайте дружить!</b>
+        <ul>
+          <li><a class="social-button" href="#">Вконтакте</a></li>
+          <li><a class="social-button" href="#">Фейсбук</a></li>
+          <li><a class="social-button" href="#">Инстаграм</a></li>
+        </ul>
+      </div>
+      <p class="footer-copyright">
+        <b>Разработано:</b>
+        <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+      </p>
+    </footer>
 
+    <section class="modal modal-login">
+      <h2>Личный кабинет</h2>
+      <p>Введите свой логин и пароль.</p>
+      <!-- Здесь будет форма -->
+      <span class="modal-close">x</span>
+    </section>
+
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <span class="modal-close">x</span>
+    </section>
   </body>
   </html>
