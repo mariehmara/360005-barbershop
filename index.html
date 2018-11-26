@@ -20,21 +20,9 @@
         <li><a href="contacts.html">Контакты</a></li>
       </ul>
       <ul class="user-navigation">
-        <a href="login-link">Вход</a>
-        <div class="entry-form">
-          <form action="//echo.htmlacademy.ru" method="post" class="entry-form">
-            <h2>Вход</h2>
-            <p class="enter_login">
-              Введите пожалуйста свой логин и пароль
-            </p>
-              <p>
-                <label for="login" class="visually-hidden">ЛОГИН</label>
-                <input type="text" name="login" id="login" placeholder="ЛОГИН">
-              </p>
-              <label for="password" class="visually-hidden">ПАРОЛЬ</label>
-                  <input type="password" name="password" id="password" placeholder="ПАРОЛЬ">
-          </form>
-        </div>
+        <li>
+          <a href="login.html" class="login-form">Вход</a>
+        </li>
       </ul>
     </nav>
   </header>
@@ -76,8 +64,8 @@
       <figure class="gallery-content">
         <a href="#"><img src="img/gallery-item-1.jpg" width="286" height="164" alt="Интерьер"></a>
       </figure>
-      <span class="button gallery-button gallery-button-back">Назад</span>
-      <span class="button gallery-button gallery-button-next">Вперед</span>
+      <button class="button gallery-button gallery-button-back">Назад</button>
+      <button class="button gallery-button gallery-button-next">Вперед</button>
     </section>
     <section class="contacts">
       <h2>Контактная информация</h2>
@@ -97,7 +85,18 @@
     <section class="appointment">
       <h2>Записаться</h2>
       <p class="appointment-info">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-      <!-- Здесь будет форма -->
+      <form class="appointment-form" action="//echo.htmlacademy.ru" method="post">
+        <p><label for="date">ДАТА</label>
+          <input type="text" name="date" id="date" placeholder="08.10.2017"></p>
+        <p><label for="time">ВРЕМЯ</label>
+          <input type="datetime-local" name="datetime" id="time"></p>
+        <p><label for="yourname">ВАШЕ ИМЯ</label>
+          <input type="text" name="name" id="yourname" placeholder="Борода"></p>
+        <p><label for="phone">ТЕЛЕФОН</label>
+          <input type="text" name="phone" id="phone" placeholder="+7 123 456-78-90"></p>
+        <p><input type="submit" value='ОТПРАВИТЬ'>
+          <p>
+      </form>
     </section>
   </main>
   <footer class="main-footer">
@@ -123,12 +122,27 @@
   <section class="modal modal-login">
     <h2>Личный кабинет</h2>
     <p>Введите свой логин и пароль.</p>
-    <!-- Здесь будет форма -->
-    <span class="modal-close">x</span>
+    <form action="//echo.htmlacademy.ru" method="post" class="entry-form">
+      <h2>Вход</h2>
+      <p class="enter-login">
+        <button class="modal-close" type="button" aria-label="закрыть окно">ЗАКРЫТЬ</button>
+        Введите пожалуйста свой логин и пароль
+      </p>
+      <p>
+        <label for="login" class="visually-hidden">ЛОГИН</label>
+        <input type="text" name="login" id="login" placeholder="ЛОГИН">
+      </p>
+      <p><label for="password" class="visually-hidden">ПАРОЛЬ</label>
+        <input type="password" name="password" id="password" placeholder="ПАРОЛЬ"></p>
+      <p><label><input type="checkbox" name="checkbox" id="checkbox" checked>ЗАПОМНИТЕ МЕНЯ</label></p>
+      <p><a href="#">Я ЗАБЫЛ ПАРОЛЬ!</a></p>
+      <p><input type="submit" value='ВОЙТИ'></p>
+    </form>
   </section>
   <section class="modal modal-map">
     <h2 class="visually-hidden">Как до нас добраться</h2>
-    <span class="modal-close">x</span>
+    <img src="img/map.jpeg" alt="офис находится на улице Большая Конюшенная 19/8, Санкт-Петербург" width="780" height="574">
+    <button class="modal-close" aria-label="закрыть окно" type="button">x</button>
   </section>
 </body>
 
