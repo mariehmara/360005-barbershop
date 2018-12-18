@@ -77,11 +77,18 @@ input[type="radio"].visually-hidden {
 }
 
 /*end of catalog page */
+
+
 .main-navigation {
-  font-size: 16px;
-  line-height: 24px;
-  background-color: black;
-  color: #f7f4f1;
+  display: flex;
+flex-direction: column;
+align-items: center;
+
+font-size: 16px;
+line-height: 20px;
+color: #ffffff;
+
+background-color: transparent;
 }
 
 .site-navigation, .user-navigation {
@@ -292,6 +299,11 @@ input[type="radio"].visually-hidden {
 .main-footer .container {
   display: flex;
 }
+.footer-contacts {
+  width: 320px;
+  margin: 0;
+  margin-right: 80px;
+}
 
 .footer-contacts a {
   color: white;
@@ -301,6 +313,11 @@ input[type="radio"].visually-hidden {
 .footer-contacts a:hover,
 .footer-contacts a:focus {
   text-decoration: none;
+}
+
+.footer-social {
+  width: 145px;
+  text-align: center;
 }
 
 .footer-social ul {
@@ -376,12 +393,13 @@ body {
 .main-header {
   margin-bottom: 75px;
 }
-
-.main-navigation {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  background-color: #242424;
 }
+
 
 .main-header-logo {
   order: 2;
@@ -446,30 +464,6 @@ body {
   width: 300px;
 }
 
-.main-footer {
-  margin-top: 65px;
-  padding: 60px 0;
-}
-
-.main-footer .container {
-  display: flex;
-}
-
-.footer-contacts {
-  margin-right: 80px;
-  width: 320px;
-  margin: 0;
-}
-
-.footer-social {
-  width: 145px;
-}
-
-.footer-copyright {
-  margin-left: auto;
-  width: 150px;
-  margin: 0;
-}
 
 /* flex-container >>>> */
 .container {
@@ -591,55 +585,8 @@ body {
   background-image:
     url("..//img/line.png"),
     url("..//img/pattern-white.png");
-  background-position: 0 0;
-  background-repeat: repeat;
   background-position: center, 0 0;
   background-repeat: no-repeat, repeat;
-}
-
-.news {
-  width: 300px;
-}
-
-.gallery {
-  width: 300px;
-}
-
-.features {
-  margin-bottom: 80px;
-}
-
-.contacts {
-  width: 380px;
-}
-
-.appointment {
-  width: 300px;
-}
-
-.main-footer {
-  margin-top: 65px;
-  padding: 60px 0;
-}
-
-.main-footer .container {
-  display: flex;
-}
-
-.footer-contacts {
-  margin-right: 80px;
-  width: 320px;
-  margin: 0;
-}
-
-.footer-social {
-  width: 145px;
-}
-
-.footer-copyright {
-  margin-left: auto;
-  width: 150px;
-  margin: 0;
 }
 
 /*flex for inner-pages >>> */
